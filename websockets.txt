@@ -1,0 +1,10 @@
+websockets= Node. js provides a native module called 'net' that allows developers to create sockets and establish low-level TCP connections. This module provides the necessary APIs to create server-side and client-side sockets, handle incoming connections, send and receive data, and manage the socket lifecycle.
+
+To create a WebSocket server in Node.js, you can use the 'ws' module, which is a popular WebSocket library that provides a simple and easy-to-use API for creating WebSocket servers and clients. The 'ws' module is built on top of the 'net' module and provides additional features such as automatic ping/pong handling, binary data support, and more.
+
+To create a WebSocket server, you can use the 'ws' module as follows:
+
+```javascript
+const WebSocket = require('ws');
+
+const wss = new WebSocket.Server({ port: 8080 });
